@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Reminders</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/minty/bootstrap.min.css"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+        <a class="navbar-brand" href="index.html">Reminders</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="notes.html">Notes</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="todo.html">To-do</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="git.html">Git</a>
+                </li>
+            </ul>
+            <span class="navbar-text">
+                Spring of discipline
+            </span>
+        </div>
+    </nav>
+    <div class="container-fluid" id="todo">
+        <div class="row justify-content-between px-2">
+            <div class="col-lg-3 col-md-5 col-8">
+                <ul class="list-group">
+                    <li class="list-group-item"><strong>To-do</strong></li>
+                    <li class="list-group-item">
+                        Get up early
+                        <div class="custom-control custom-checkbox float-right">
+                            <input type="checkbox" class="custom-control-input" id="item0">
+                            <label class="custom-control-label" for="item0">Done</label>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        Have breakfast
+                        <div class="custom-control custom-checkbox float-right">
+                            <input type="checkbox" class="custom-control-input" id="item1">
+                            <label class="custom-control-label" for="item1">Done</label>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        Shower
+                        <div class="custom-control custom-checkbox float-right">
+                            <input type="checkbox" class="custom-control-input" id="item2">
+                            <label class="custom-control-label" for="item2">Done</label>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        Walk
+                        <div class="custom-control custom-checkbox float-right">
+                            <input type="checkbox" class="custom-control-input" id="item3">
+                            <label class="custom-control-label" for="item3">Done</label>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        Study
+                        <div class="custom-control custom-checkbox custom-checkbox float-right">
+                            <input type="checkbox" class="custom-control-input" id="item4">
+                            <label class="custom-control-label" for="item4">Done</label>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        Have lunch
+                        <div class="custom-control custom-checkbox float-right">
+                            <input type="checkbox" class="custom-control-input" id="item5">
+                            <label class="custom-control-label" for="item5">Done</label>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        Study
+                        <div class="custom-control custom-checkbox float-right">
+                            <input type="checkbox" class="custom-control-input" id="item6">
+                            <label class="custom-control-label" for="item6">Done</label>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        Make dinner
+                        <div class="custom-control custom-checkbox float-right">
+                            <input type="checkbox" class="custom-control-input" id="item7">
+                            <label class="custom-control-label" for="item7">Done</label>
+                        </div>
+                    </li>
+                    <li class="list-group-item">Chill</li>
+                </ul>
+            </div>
+            <div class="col-auto my-auto no-view">
+                <h4>FOR</h4>
+            </div>
+            <div class="col-lg-4 text-right no-view">
+                <img src="kitties.jpg" height="500px" alt="the cutest pair of kitties in the world">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            console.log("hi0? =(");
+            $(":checkbox").click(function() {
+                console.log("hi1? =(");
+                if ($(this).prop("checked") == true) {
+                    $(this).parents("li").fadeOut("slow");
+                    console.log("hi? =(");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Reminders</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/minty/bootstrap.min.css"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+        <a class="navbar-brand" href="index.html">Reminders</a>
+        <button class="navbar-toggler" type="button" -toggle="collapse" -target="#navbarText" aria-controls="navbarText"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="notes.html">Notes</a>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="todo.html">To-do</a>
+                
+                <li class="nav-item active">
+                    <a class="nav-link" href="git.html">Git</a>
+                
+            </ul>
+            <span class="navbar-text">
+                Spring of discipline
+            </span>
+        </div>
+    </nav>
+
+    
+        <div class="row">
+            <div class="col-lg-9">
+                <table class="table table-bordered">
+                    <h5 class="m-3">Git commands</h5>
+                    <tbody>
+                        <tr>
+                            <td><code>git clone &lt;url&gt;</code></td>
+                            <td>take a repository stored on a server (like GitHub) and downloads it</td>
+                        </tr>
+                        <tr>
+                            <td><code>git add &lt;filename(s)&gt;</code></td>
+                            <td>add files to the staging area to be included in the next commit</td>
+                        </tr>
+                        <tr>
+                            <td><code>git commit -m "message"</code></td>
+                            <td>take a snapshot of the repository and save it with a message about the changes</td>
+                        </tr>
+                        <tr>
+                            <td><code>git commit -am &lt;filename(s)&gt; "message"</code></td>
+                            <td>add files and commit changes all in one</td>
+                        </tr>
+                        <tr>
+                            <td><code>git status</code></td>
+                            <td>print what is currently going on with the repository</td>
+                        </tr>
+                        <tr>
+                            <td><code>git push</code></td>
+                            <td>push any local changes (commits) to a remote server</td>
+                        </tr>
+                        <tr>
+                            <td><code>git pull</code></td>
+                            <td>pull any remote changes from a remote server to a local computer</td>
+                        </tr>
+                        <tr>
+                            <td><code>git log</code></td>
+                            <td>print a history of all the commits that have been made</td>
+                        </tr>
+                        <tr>
+                            <td><code>git reflog</code></td>
+                            <td>print a list of all the different references to commits</td>
+                        </tr>
+                        <tr>
+                            <td><code>git reset --hard &lt;commit&gt;</code></td>
+                            <td>reset the repository to a given commit</td>
+                        </tr>
+                        <tr>
+                            <td><code>git reset --hard origin/master</code></td>
+                            <td>reset the repository to its original state (e.g. the version cloned from GitHub)</td>
+                        </tr>
+                        <tr>
+                            <td><code>git branch</code></td>
+                            <td>list all the branches currently in a repository</td>
+                        </tr>
+                        <tr>
+                            <td><code>git branch &lt;name&gt;</code></td>
+                            <td>create a new branch called <code>name</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>git checkout &lt;name&gt;</code></td>
+                            <td>switch current working branch to <code>name</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>git merge &lt;name&gt;</code></td>
+                            <td>merge branch <code>name</code> into current working branch (normally <code>master</code>)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+</body>
+
+</html>
